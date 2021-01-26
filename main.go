@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"search-service/Config"
-	"search-service/Routes"
 
 	"github.com/jinzhu/gorm"
+
+	"github.com/z4rx/search-service/Config"
+	"github.com/z4rx/search-service/Routes"
 )
 
 var err error
