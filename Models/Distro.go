@@ -1,7 +1,7 @@
 package Models
 
 import (
-	"search-service/Config"
+	"github.com/z4rx/search-service/Config"
 
 	_ "github.com/go-sql-driver/mysql"
 )

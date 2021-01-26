@@ -2,10 +2,11 @@ package Controllers
 
 import (
 	"net/http"
-	"search-service/Models"
 	"strconv"
 
 	"github.com/gin-gonic/gin"
+
+	"github.com/z4rx/search-service/Models"
 )
 
 type cliResponse struct {

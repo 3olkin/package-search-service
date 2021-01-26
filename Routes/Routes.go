@@ -1,9 +1,9 @@
 package Routes
 
 import (
-	"search-service/Controllers"
-
 	"github.com/gin-gonic/gin"
+
+	"github.com/z4rx/search-service/Controllers"
 )
 
 // Configure routes

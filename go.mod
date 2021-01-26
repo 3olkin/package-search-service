@@ -1,4 +1,4 @@
-module search-service
+module github.com/z4rx/search-service
 
 go 1.15
 
