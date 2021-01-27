@@ -6,6 +6,7 @@ import (
 
 	"github.com/jinzhu/gorm"
 
+	_ "github.com/lib/pq"
 	"github.com/z4rx/search-service/Config"
 	"github.com/z4rx/search-service/Models"
 	"github.com/z4rx/search-service/Routes"
