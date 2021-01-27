@@ -8,7 +8,6 @@ import (
 
 	_ "github.com/lib/pq"
 	"github.com/z4rx/search-service/Config"
-	"github.com/z4rx/search-service/Models"
 	"github.com/z4rx/search-service/Routes"
 )
 
@@ -20,7 +19,6 @@ func main() {
 		fmt.Println("Status:", err)
 	}
 	defer Config.DB.Close()
-	Config.DB.AutoMigrate(&Models.Distro{}, &Models.Package{}, &Models.Matching{})
 	r := Routes.SetupRouter()
 	r.Run()
 }
