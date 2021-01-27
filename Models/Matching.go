@@ -3,7 +3,7 @@ package Models
 import (
 	"github.com/z4rx/search-service/Config"
 
-	_ "github.com/go-sql-driver/mysql"
+	_ "github.com/jinzhu/gorm/dialects/postgres"
 )
 
 func GetMatchingByParams(matching *Matching, package_id string, distro_id string) (err error) {

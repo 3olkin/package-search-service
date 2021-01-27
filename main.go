@@ -2,9 +2,11 @@ package main
 
 import (
 	"fmt"
+	"os"
 
 	"github.com/jinzhu/gorm"
 
+	_ "github.com/lib/pq"
 	"github.com/z4rx/search-service/Config"
 	"github.com/z4rx/search-service/Routes"
 )
@@ -12,7 +14,7 @@ import (
 var err error
 
 func main() {
-	Config.DB, err = gorm.Open("mysql", Config.DbURL(Config.BuildDBConfig()))
+	Config.DB, err = gorm.Open("postgres", os.Getenv("DATABASE_URL"))
 	if err != nil {
 		fmt.Println("Status:", err)
 	}
